@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica11Ej3.MainPage"
+             Shell.NavBarIsVisible="False">
+    <!--<Summary>
+        <Createddate>25/6/2024</createddate>
+        <company>Shele</company>
+        <lastmodificationdate>25/6/2024</lastmodificationdate>
+        <lastmodificationdescription>
+            Se añadieron los comentarios al código
+        </lastmodificationdescription>
+        <lastmodifierautor>Maynor</lastmodifierautor>
+</Summary>-->
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dino.jpg"
+                HeightRequest="185"
+                WidthRequest="200"
+                Aspect="AspectFit"
+                />
+
+            <Entry Placeholder="Ingrese el nombre del dinosaurio"
+               HorizontalOptions="Center"
+               WidthRequest="400"
+               x:Name="eNombre"/>
+            
+            <Entry Placeholder="Ingrese su peso (kg)"
+               HorizontalOptions="Center"
+               WidthRequest="400"
+               x:Name="ePeso"/>
+
+            <Entry Placeholder="Ingrese su altura (mts)"
+               HorizontalOptions="Center"
+               WidthRequest="400"
+               x:Name="eAltura"/>
+
+            <Label
+                Text="Datos:---"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                FontSize="20"
+                x:Name="lbDatos"/>
+
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Calcular" 
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center"
+                WidthRequest="350" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
